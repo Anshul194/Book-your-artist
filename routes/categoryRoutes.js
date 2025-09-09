@@ -42,7 +42,7 @@ categoryRouter.post(
   accessTokenAutoRefresh,
   // passport.authenticate('jwt', { session: false }),
   isAdmin,
-  checkPermission('Categories', 'create'),
+  // checkPermission('Categories', 'create'),
   upload.fields([
     { name: 'coverImage', maxCount: 1 },
     { name: 'image', maxCount: 1 }
